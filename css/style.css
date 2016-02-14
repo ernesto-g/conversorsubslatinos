@@ -1,0 +1,310 @@
+/*
+	Conversor de Subtitulos latino
+    Copyright (C) <2014>  Ernesto Gigliotti <ernestogigliotti@gmail.com>
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/	
+body{ background : #5889E8; }
+body,h1 {
+	padding : 0;
+	margin : 0;
+}
+#topPart {
+	height : 320px;
+	background : #5889E8;
+	padding : 0;
+	margin : 0;
+}
+#bottomPart {
+	height : auto;
+	background : #60FFE9;
+	padding : 0;
+	margin : 0;
+	padding-top: 25px;
+	background-image : url(../images/shadow.png);
+	background-repeat : repeat-x;
+}
+footer {
+	background : #5889E8;
+	padding : 0;
+	height : 100px;
+}
+footer p{
+	text-align : center;
+	margin : 0;
+	font : 12px verdana;
+	font-weight:bold;
+	padding-top : 3px;
+}
+
+/* Contenido en top */
+#topContent
+{
+	margin : auto;
+	width : 600px;
+}
+#logo{
+	float : left;
+	width : 300px;
+}
+section {
+	font-family : verdana;
+	color: white;
+	float : left;
+	width : 300px;
+	margin-top : 80px;
+}
+section h1{
+	font-size : 25px;
+}
+section p{
+	font-size : 12px;
+}
+/*************************************************************************/
+
+#facebook-div {
+	width:400px;
+	margin:auto;
+	margin-top:20px;
+}
+
+
+
+/* Formulario Edit Subtítulo */
+#editForm {
+	width : 800px;
+	height : auto;
+	background : #6DC5FF;
+	margin: auto;
+	/* sombra */
+	box-shadow: 5px 5px 10px #666666;
+	/* borde redondeado */
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+div.download {
+    width: 157px;
+    height: 57px;
+    background: url(../images/download.png) ;
+    overflow: hidden;
+	float : left;
+	margin-left : 220px;
+	margin-right : 50px;
+}
+div.download input {
+    display: block !important;
+    width: 157px !important;
+    height: 57px !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
+}
+div.download input:hover {
+	cursor : pointer;
+}
+div.download a { /* boton volver */
+	float : left;
+}
+
+/* Tabla de edicion */
+#editTable th {
+	background-color : #5889E8;
+	color : white;
+	font-family : verdana;
+	font-size : 12px;
+	padding : 3px;
+}
+#editTable td,th{
+	border : 1px solid #5889E8;
+}
+#editTable {
+	margin : auto;
+	margin-bottom : 10px;
+	padding-top : 10px;
+}
+#editTable mark {
+	text-decoration : none;
+	font : 14px verdana;
+	font-weight:bold;
+	color : black;
+	background-color : transparent;
+}
+#thLine{
+	width : 45px;
+}
+#thTxtOr{
+	width : 300px;
+}
+input.classInputEditTxt { width: 300px; }
+#thTxtTr{
+	width : 300px;
+}
+#tdTxtOr {
+	font: 12px verdana;
+	font-weight:bold;
+	color: white;
+}
+#editHeader{
+	margin: auto;
+	margin-bottom:10px; 
+	width : 780px;
+	font: 14px verdana;
+	color: white;
+	background : #6DC5FF;
+	/* borde redondeado */
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	padding : 10px;
+	/* sombra */
+	box-shadow: 5px 5px 10px #666666;
+}
+#editForm img{
+	border: 0px; 
+}
+/*************************************************************************/
+
+/* Formulario Upload Subtítulo */
+#uploadForm {
+	width : 400px;
+	height : 260px;
+	background : #6DC5FF;
+	margin: auto;
+	/* sombra */
+	box-shadow: 5px 5px 10px #666666;
+	/* borde redondeado */
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+div.upload {
+    width: 157px;
+    height: 57px;
+    background: url(../images/upload.png) ;
+    overflow: hidden;	
+	margin: auto;
+	margin-top : 10px;
+	margin-bottom : 15px;
+}
+div.translate {
+    width: 157px;
+    height: 57px;
+    background: url(../images/translate.png) ;
+    overflow: hidden;
+	margin: auto;
+	margin-top : 10px;
+}
+#captchaImg, #captchaTxt
+{
+	float:left;
+}
+#captchaTxt
+{
+	margin-left:15px;
+	margin-top : 6px;
+}
+#divCaptcha
+{
+	margin: auto;
+	/*width: 300px;*/
+	margin-left: 50px;
+	height : 50px;
+}
+
+div.upload input {
+    display: block !important;
+    width: 157px !important;
+    height: 57px !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
+}
+div.upload input:hover {
+	cursor : pointer;
+}
+#uploadFile
+{
+	margin-top : 10px;
+	margin-left : 50px;
+	width: 300px;
+	height : 25px;
+}
+#translateButton
+{
+    display: block !important;
+    width: 157px !important;
+    height: 57px !important;
+    opacity: 0 !important;
+    overflow: hidden !important;	
+}
+#translateButton:hover {
+	cursor : pointer;
+}
+/*************************************************************************/
+
+/* Error sign */
+#error {
+	width : 800px;
+	height : 120px;
+	background-color : rgba(255,0,0,1) ;
+	margin: auto;
+	/* sombra */
+	box-shadow: 5px 5px 10px #666666;
+	/* borde redondeado */
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	color : white ;
+	font: 14px verdana;
+	font-weight: bold;	
+	text-align: center;
+	padding-top: 25px;
+}
+
+
+/*************************************************************************/
+
+td.tooltip {outline:none; }
+td.tooltip strong {line-height:30px;}
+td.tooltip:hover {text-decoration:none;} 
+td.tooltip span {
+    z-index:10;
+	display:none; 
+	padding:14px 20px;
+    margin-top:-5px; 
+	margin-left:0px;
+    width:240px; line-height:16px;
+	font: 12px verdana;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {  
+/* CSS Statements that only apply on webkit-based browsers (Chrome, Safari, etc.) */  
+	td.tooltip span {
+		margin-top:-30px; 
+		margin-left:300px;
+	} 
+}
+
+td.tooltip:hover span{
+    display:inline; position:absolute; color:#111;
+    border:1px solid #DCA; background:#fffAF0;}
+.callout {z-index:20;position:absolute;top:10px;border:0;left:-12px;}
+    
+/*CSS3 extras*/
+td.tooltip span
+{
+    border-radius:4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+        
+    -moz-box-shadow: 5px 5px 8px #666666;
+    -webkit-box-shadow: 5px 5px 8px #666666;
+    box-shadow: 5px 5px 8px #666666;
+}
+
